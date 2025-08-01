@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - My Business</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>My Business</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <input type="submit" value="Send Message" class="btn">
+    <input type="hidden" name="_redirect" value="thankyou.html">
+    </form>
+    <h3>Our Location</h3>
+     <div class="map-container">
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18... (your map link)"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+     </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Business. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

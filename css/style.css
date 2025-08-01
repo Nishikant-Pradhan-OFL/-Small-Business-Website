@@ -1,0 +1,331 @@
+body 
+{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+header 
+{
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+header nav a 
+{
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.hero 
+{
+  padding: 2rem;
+  background: #0073e6;
+  color: #fff;
+  text-align: center;
+}
+
+.btn 
+{
+  display: inline-block;
+  background: #fff;
+  color: #0073e6;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+footer 
+{
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.services 
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.service-item 
+{
+  flex: 1 1 250px;
+  background: #e6f0ff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-item h3 
+{
+  margin-top: 0;
+  color: #0073e6;
+}
+
+nav a.active 
+{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) 
+{
+  header nav 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav a 
+  {
+    margin: 0.5rem 0;
+  }
+
+  .hero h2, .hero p 
+  {
+    padding: 0 1rem;
+  }
+
+  .services 
+  {
+    flex-direction: column;
+  }
+
+  .content 
+  {
+    padding: 1rem;
+  }
+
+  form input, form textarea 
+  {
+    font-size: 1rem;
+  }
+
+  .btn 
+  {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+.map-container 
+{
+  margin-top: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.testimonials 
+{
+  background-color: #f0f8ff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.testimonials h2 
+{
+  margin-bottom: 1.5rem;
+  color: #0073e6;
+}
+
+.testimonial-list 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.testimonial 
+{
+  background: #fff;
+  border-left: 5px solid #0073e6;
+  padding: 1rem;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.testimonial p 
+{
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial h4 
+{
+  margin: 0;
+  color: #555;
+}
+
+.slider 
+{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  max-height: 350px;
+}
+
+.slides 
+{
+  display: flex;
+  width: 300%;
+  animation: slide 9s infinite;
+}
+
+.slides img 
+{
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slide 
+{
+  0% { margin-left: 0; }
+  33% { margin-left: 0; }
+  36% { margin-left: -100%; }
+  66% { margin-left: -100%; }
+  69% { margin-left: -200%; }
+  99% { margin-left: -200%; }
+  100% { margin-left: 0; }
+}
+
+body.dark-mode 
+{
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header 
+{
+  background: #1f1f1f;
+}
+
+body.dark-mode nav a 
+{
+  color: #e0e0e0;
+}
+
+body.dark-mode .hero 
+{
+  background: #333;
+  color: #fff;
+}
+
+body.dark-mode .content,
+body.dark-mode .service-item,
+body.dark-mode .testimonial 
+{
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn 
+{
+  background: #e0e0e0;
+  color: #121212;
+}
+
+.toggle-btn 
+{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #fff;
+  color: #0073e6;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.blog-list 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blog-post 
+{
+  padding: 1rem;
+  background: #eaf4ff;
+  border-left: 4px solid #0073e6;
+  border-radius: 6px;
+}
+
+.blog-post h3 
+{
+  margin-top: 0;
+}
+
+.blog-post a 
+{
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.blog-post a:hover 
+{
+  text-decoration: underline;
+}
+
+.newsletter 
+{
+  background: #f0f8ff;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 2px solid #0073e6;
+}
+
+.newsletter h2 
+{
+  color: #0073e6;
+}
+
+.newsletter form 
+{
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] 
+{
+  padding: 0.5rem;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter input[type="submit"] 
+{
+  background: #0073e6;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter input[type="submit"]:hover 
+{
+  background: #005bb5;
+}
+
